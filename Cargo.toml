@@ -13,11 +13,7 @@ edition = "2018"
 include = ["src/**/*", "README.md", "CHANGELOG.md", "assets/*.vert", "assets/*.frag"]
 
 [dependencies]
-bevy = "0.5"
+bevy = { git = "https://github.com/bevyengine/bevy", rev = "90586a4c461cde86b8a0e08f0770894e7cf30862" }
 image = "0.23"
 itertools = "0.10"
 
-[dev-dependencies]
-bevy_fly_camera = "0.7"
-bevy_log = "0.5"
-rand = "0.8"

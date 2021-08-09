@@ -110,7 +110,7 @@ impl SkyboxPlugin {
 }
 
 impl Plugin for SkyboxPlugin {
-    fn build(&self, app: &mut AppBuilder) {
+    fn build(&self, app: &mut App) {
         app.insert_resource(self.clone());
         app.add_asset::<material::SkyMaterial>();
         app.add_startup_system(image::create_skybox.system());
